@@ -10,16 +10,18 @@ console.log('The players name is ' + playerName);
 
 // Let's play message with players name
 let letsPlayMessage = playerName;
-    alert('Hi ' + letsPlayMessage + ' let\'s play!!');
+    alert('Hi ' + letsPlayMessage + ' Let\'s play!!');
 
 // Ask player who they want to be
 let playerChoice = prompt('Who are you: Bear, Ninja or Hunter?');
 
 // Prep player's results
-let resultMessagePlayer = playerName + ', you picked ' + playerChoice + '. ';
+let resultMessagePlayer = playerName + ', you choose ' + playerChoice + '!';
+    console.log(resultMessagePlayer); 
 
 // Prep computer's results
-let resultMessageComputer = 'The computer picked ' + computerChoice + '. ';
+let resultMessageComputer = 'The computer choose ' + computerChoice + '!';
+    console.log(resultMessageComputer); 
 
 // varaible for the results to be displayed
 let gameResult = '';
@@ -61,7 +63,8 @@ if (
 }
 
 //Results in console
-console.log(resultMessagePlayer + resultMessageComputer + gameResult); 
+console.log(gameResult); 
+
 
 // Results in HTML
 document.getElementById('gameResult').innerHTML =  
